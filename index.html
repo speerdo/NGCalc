@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="CalculatorApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <head>
+        <title>Adam's Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+      </head>
+
+      <body ng-controller="CalculatorCtrl as ctrl">
+
+      <div class="container-fluid" id='calculator-div'>
+         <div id='button-div'>
+          <div id="button-inner">
+           <div class='row'>
+            <div id ='display' class='col-xs-12'>
+              <p>{{ctrl.display}}</p>
+             </div>
+            </div>
+
+             <div class='row'>
+              <div class='col-xs-3'>
+                <button id="AC" ng-click="ctrl.ACClicked()">AC</button>
+               </div>
+               <div class='col-xs-3'>
+                <button ng-click="ctrl.plusminusClicked('+/-')">+/-</button>
+               </div>
+               <div class='col-xs-3'>
+                <button ng-click="ctrl.percentClicked()">%</button>
+               </div>
+               <div class='col-xs-3'>
+                <button ng-click="ctrl.operatorClicked('/')">/</button>
+               </div>
+             </div>
+
+               <div class='row'>
+              <div class='col-xs-3'>
+                <button ng-click="ctrl.numberClicked('7')">7</button>
+               </div>
+               <div class='col-xs-3'>
+                <button ng-click="ctrl.numberClicked('8')">8</button>
+               </div>
+               <div class='col-xs-3'>
+                <button ng-click="ctrl.numberClicked('9')">9</button>
+               </div>
+               <div class='col-xs-3'>
+                <button ng-click="ctrl.operatorClicked('+')">+</button>
+               </div>
+             </div>
+
+             <div class='row'>
+              <div class='col-xs-3'>
+                <button ng-click="ctrl.numberClicked('4')">4</button>
+               </div>
+               <div class='col-xs-3'>
+                <button ng-click="ctrl.numberClicked('5')">5</button>
+               </div>
+               <div class='col-xs-3'>
+                <button ng-click="ctrl.numberClicked('6')">6</button>
+               </div>
+               <div class='col-xs-3'>
+                <button ng-click="ctrl.operatorClicked('-')">-</button>
+               </div>
+             </div>
+
+            <div class='row'>
+              <div class='col-xs-3'>
+                <button ng-click="ctrl.numberClicked('1')">1</button>
+               </div>
+               <div class='col-xs-3'>
+                <button ng-click="ctrl.numberClicked('2')">2</button>
+               </div>
+               <div class='col-xs-3'>
+                <button ng-click="ctrl.numberClicked('3')">3</button>
+               </div>
+               <div class='col-xs-3'>
+                <button ng-click="ctrl.operatorClicked('*')">x</button>
+               </div>
+             </div>
+
+            <div class='row'>
+              <div class='col-xs-3'>
+                <button ng-click="ctrl.numberClicked('0')">0</button>
+               </div>
+               <div class='col-xs-3'>
+                <button id="decimal" ng-click="ctrl.decimalClicked()">.</button>
+               </div>
+               <div class='col-xs-6'>
+                <button id="equals" ng-click="ctrl.computeResult()">=</button>
+               </div>
+             </div>
+           </div>
+           </div>
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+      <script src="app.js"></script>
+      </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <title></title>
+
+    <!-- Bootstrap -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+  </body>
+</html>
